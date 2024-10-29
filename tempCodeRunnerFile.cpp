@@ -1,2 +1,8 @@
+#include <bits/stdc++.h>
+using namespace std;
 
-        if (sum % 2 == 0)
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--)

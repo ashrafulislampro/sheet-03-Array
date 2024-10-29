@@ -15,13 +15,16 @@ int main()
     }
     for (int i = 0; i < n; i++)
     {
-        for (int j = i; j <= i; j++)
+        for (int j = 0; j < n; j++)
         {
-            main_dig += arr[i][j];
-        }
-        for (int j = n - i - 1; j >= n - i - 1; j--)
-        {
-            second_dig += arr[i][j];
+            if (i == j)
+            {
+                main_dig += arr[i][j];
+            }
+            if (i + j == n - 1)
+            {
+                second_dig += arr[i][j];
+            }
         }
     }
 
